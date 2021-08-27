@@ -1,0 +1,30 @@
+{
+    "name": "hsvisus/sms",
+    "description": "一个短信通知应用接口",
+    "require": {
+        "overtrue/easy-sms": "~1.3.2"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Hsvisus\\Sms\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "'fei'",
+            "email": "'13380320462@163.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hsvisus\\Sms\\SmsProvider"
+            ],
+            "aliases": {
+                "Sms": "Hsvisus\\Sms\\FacadeService"
+            }
+        }
+    }
+}
