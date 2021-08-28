@@ -1,4 +1,5 @@
 ### 短信通知包
+- 发布`php artisan vendor:publish --provider="Hsvisus\Sms\SmsProvider"`
 ```
     /**
      * 发送通知短信

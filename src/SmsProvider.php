@@ -29,7 +29,7 @@ class SmsProvider extends ServiceProvider
         //$this->loadRoutesFrom(__DIR__.'/routes.php');
         //配置文件
         $this->publishes([
-           __DIR__.'/config.php' => config_path('sms.php'),
+           __DIR__.'Config/config.php' => config_path('sms.php'),
         ]);
         //数据迁移
         $migrations = [
